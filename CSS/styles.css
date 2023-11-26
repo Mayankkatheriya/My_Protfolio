@@ -28,6 +28,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow: hidden;
 }
 
 /* -------------cursor CSS ------------------- */
@@ -98,12 +99,28 @@ body {
   cursor: none !important;
 }
 
+/*TODO Book CSS */
+
 .wrapper {
   position: relative;
   width: 66rem;
   height: 98vh;
   max-height: 45rem;
   padding: 1rem;
+  animation: show-animate 2s forwards;
+  perspective: 300rem;
+}
+
+@keyframes show-animate {
+  0%,
+  30% {
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
 }
 
 .cover {
@@ -121,6 +138,12 @@ body {
 .cover.cover-left {
   z-index: -1;
 }
+
+.cover.cover-right {
+  z-index: 100;
+  transition: transform 1s cubic-bezier(0.645, 0.45, 0.355, 1);
+}
+
 .cover.cover-right.turn {
   transform: rotateY(180deg);
 }
@@ -130,6 +153,7 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+  perspective: 300rem;
 }
 
 .book .book-page {
@@ -140,6 +164,10 @@ body {
   box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 2rem;
+}
+
+.book-page.page-left {
+  box-shadow: -0.6rem 0.6rem 0.6rem rgba(0, 0, 0, 0.1);
 }
 
 .profile-page {
@@ -240,6 +268,7 @@ body {
   right: 0;
   transform-style: preserve-3d;
   transform-origin: left;
+  transition: transform 1s cubic-bezier(0.645, 0.45, 0.355, 1);
 }
 
 .book-page.page-right.turn {
@@ -353,6 +382,10 @@ body {
   overflow: hidden;
 }
 
+.second {
+  margin-top: 1rem;
+}
+
 .portfolio-box .img-box img {
   width: 100%;
   height: 100%;
@@ -383,6 +416,7 @@ body {
   display: flex;
   align-items: center;
   color: var(--main-color);
+  font-weight: 600;
 }
 
 .portfolio-box .info-box .info-title a i {
