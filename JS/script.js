@@ -24,7 +24,6 @@ pageTurnBtn.forEach((el, index) => {
 //TODO contact me button when clicked
 const pages = document.querySelectorAll(".book-page.page-right");
 const contactMeBtn = document.querySelector(".btn.contact-me");
-console.log(pages, contactMeBtn);
 
 contactMeBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -286,3 +285,40 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 //TODO Email sent
+
+const contactForm = document.querySelector("#contact-form");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let username = e.target.children[0].value;
+  let useremail = e.target.children[1].value;
+  let message = e.target.children[2].value;
+  Email.send({
+    SecureToken : "7e7e4ded-65fb-4d08-931c-9d5162c46d33",
+    To: "mayankkatheriya4@gmail.com",
+    From: `mayankkatheriya4@gmail.com`,
+    Subject: "PortFolio contact Enquiry",
+    Body: `
+    Name: ${username}<br/>
+    Email: ${useremail}<br/>
+    Message: ${message}
+    `,
+  }).then((message) => {
+    if (message == "OK") {
+      Swal.fire({
+        title: "Good job!",
+        text: "Your Details Sent",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
+    }
+    e.target.children[0].value = "";
+    e.target.children[1].value = "";
+    e.target.children[2].value = "";
+  });
+});
