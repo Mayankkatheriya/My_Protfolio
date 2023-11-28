@@ -22,8 +22,8 @@ Welcome to my portfolio website! This project includes both the frontend (HTML, 
 
 ## Demo
 
-For a live demo, visit [My Portfolio](https://mayankkatheriya.github.io/My_Protfolio/)
-for Video [Click here](https://drive.google.com/file/d/1BpVPdwKOTPWOcukTI-Bx42S6kNTTWis1/view?usp=drive_link)
+For a live demo, visit [My Portfolio](https://mayankkatheriya.github.io/My_Protfolio/) \
+For Video [Click here](https://drive.google.com/file/d/1BpVPdwKOTPWOcukTI-Bx42S6kNTTWis1/view?usp=drive_link)
 ## Features
 
 - Interactive cursor animation
