@@ -1,7 +1,7 @@
 # Portfolio Website
 
-![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/d477a18d-5989-4afd-9802-47bd84546759)
-![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/1b87716a-6b0e-4b03-b21e-c02895a58d59)
+![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/442ba0f2-7f0c-4290-a48b-27d2555791f2)
+![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/95c89a54-2cfe-49e0-9c1b-0d482eeede27)
 
 This is the repository for my personal portfolio website, showcasing my projects and providing information about me.
 
@@ -18,12 +18,12 @@ This is the repository for my personal portfolio website, showcasing my projects
 
 ## Overview
 
-Welcome to my portfolio website! This project includes both the frontend (HTML, CSS, JavaScript) and additional features like a custom cursor animation, page turning animation, and an email contact form. The website is designed to highlight my projects and provide an interactive and visually appealing experience.
+Welcome to my portfolio website! This project includes both the front end (HTML, CSS, JavaScript) and additional features like a custom cursor animation, page-turning animation, and an email contact form. The website is designed to highlight my projects and provide an interactive and visually appealing experience.
 
 ## Demo
 
 For a live demo, visit [My Portfolio](https://mayankkatheriya.github.io/My_Protfolio/) \
-For Video [Click here](https://drive.google.com/file/d/16uxxZXglUKsI9SX7sB8mwqj9Fi8dSWix/view?usp=sharing)
+For Video [Click here](https://drive.google.com/file/d/1rMpoSbgPS2dkwxZEKX9QF0Re3fMX7Ird/view?usp=sharing)
 ## Features
 
 - Interactive cursor animation
