@@ -1,7 +1,3 @@
-# My_Protfolio
-
-## Demo [Link](https://mayankkatheriya.github.io/My_Protfolio/)
-
 # Portfolio Website
 
 ![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/d477a18d-5989-4afd-9802-47bd84546759)
