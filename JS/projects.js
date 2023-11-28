@@ -38,6 +38,8 @@ function appendData(data) {
   data.forEach((el) => {
     let div = document.createElement("div");
     div.className = "project-card";
+    div.setAttribute("data-aos", "zoom-in")
+    div.setAttribute("data-aos-duration", "1500")
     div.innerHTML = `
         <div class="project-img">
             <img src="${el.img}" alt="project-img" title = "${el.type}">

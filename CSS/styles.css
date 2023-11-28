@@ -165,6 +165,11 @@ body {
 
 .profile-page .btn-box {
   margin-top: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
 }
 .btn {
   display: inline-flex;
@@ -246,7 +251,7 @@ body {
 .workeduc-content ul {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  /* gap: 0.75rem; */
   list-style: none;
   margin-top: 1rem;
 }
@@ -460,6 +465,7 @@ body {
   background: transparent;
   border: var(--border);
   color: var(--text-color);
+  border-radius: 4px;
   padding: 0.8rem;
   font-size: 1rem;
   margin-bottom: 1.5rem;
