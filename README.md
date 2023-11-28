@@ -1,6 +1,7 @@
 # Portfolio Website
 
 ![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/d477a18d-5989-4afd-9802-47bd84546759)
+![image](https://github.com/Mayankkatheriya/My_Protfolio/assets/128832286/1b87716a-6b0e-4b03-b21e-c02895a58d59)
 
 This is the repository for my personal portfolio website, showcasing my projects and providing information about me.
 
