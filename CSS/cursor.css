@@ -77,14 +77,14 @@
 
 .mscursor-scale {
   transition: 0.5s ease;
-  transform: scale(1.6);
+  transform: scale(0);
 }
 
 .mscursor-scale-outline {
-  transform: scale(1.9);
+  transform: scale(0);
   background-color: transparent !important;
 }
 
 .mscursor-nocursor {
-  cursor: none !important;
+  cursor: auto !important;
 }
