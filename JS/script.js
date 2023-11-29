@@ -121,8 +121,8 @@ contactForm.addEventListener("submit", (e) => {
   }).then((message) => {
     if (message == "OK") {
       Swal.fire({
-        title: "Good job!",
-        text: "Your Details Sent",
+        title: "Thank You",
+        text: "Message Recieved, I'll connect you soon",
         icon: "success",
       });
     } else {
