@@ -262,12 +262,16 @@ body {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--second-text-color);
   display: inline-flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+}
+
+.next-prev-btn i {
+  font-size: 2rem;
 }
 
 .next-prev-btn:hover {
