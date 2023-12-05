@@ -41,9 +41,9 @@ function appendData(data) {
     div.setAttribute("data-aos", "zoom-in");
     div.setAttribute("data-aos-duration", "1500");
     div.innerHTML = `
-        <div class="project-img">
+        <a href = "${el.hosted}" class="project-img" target = "_blank" title = "Open">
             <img src="${el.img}" alt="project-img" title = "${el.type}">
-        </div>
+        </a>
         <h3>${el.name}</h3>
         <div class="btn-box">
             <a href="${el.hosted}" target="_blank" title="Try it" class="btn">Live Preview <i class='bx bx-link-external' ></i></a>
