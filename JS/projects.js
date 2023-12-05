@@ -38,8 +38,8 @@ function appendData(data) {
   data.forEach((el) => {
     let div = document.createElement("div");
     div.className = "project-card";
-    div.setAttribute("data-aos", "zoom-in")
-    div.setAttribute("data-aos-duration", "1500")
+    div.setAttribute("data-aos", "zoom-in");
+    div.setAttribute("data-aos-duration", "1500");
     div.innerHTML = `
         <div class="project-img">
             <img src="${el.img}" alt="project-img" title = "${el.type}">
@@ -88,12 +88,37 @@ filterBtn.forEach((el) => {
 //TODO Search Event
 searchInput.addEventListener("input", (e) => {
   const searchValue = e.target.value.toLowerCase().trim();
-  console.log(searchValue);
-  const filteredProjects = projectData.filter((project) => {
-    return project.name.toLowerCase().includes(searchValue);
-  });
-  console.log(filteredProjects);
-  appendData(filteredProjects);
+  let filteredProjects = [];
+
+  //* check which filtered option is currently selected
+  if (searchValue === "") {
+    let dataDiv = document.querySelector(".selected");
+    if (dataDiv.id === "top") {
+      filteredProjects = projectData.filter((ele) => {
+        return ele.top == true;
+      });
+      appendData(filteredProjects);
+    } else if (dataDiv.id === "html-css") {
+      filteredProjects = projectData.filter((ele) => {
+        return ele.type == "CSS";
+      });
+      appendData(filteredProjects);
+    } else if (dataDiv.id === "javascript") {
+      filteredProjects = projectData.filter((ele) => {
+        return ele.type == "JavaScript";
+      });
+      appendData(filteredProjects);
+    } else if (dataDiv.id === "all") {
+      appendData(projectData);
+    }
+  }
+  
+  else {
+    filteredProjects = projectData.filter((project) => {
+      return project.name.toLowerCase().includes(searchValue);
+    });
+    appendData(filteredProjects);
+  }
 });
 
 //TODO append All Projects
