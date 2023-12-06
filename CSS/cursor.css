@@ -23,7 +23,7 @@
 }
 /* -------------cursor CSS ------------------- */
 
-.mscursor-cursor {
+/* .mscursor-cursor {
   pointer-events: none;
   position: fixed;
   display: block;
@@ -87,4 +87,4 @@
 
 .mscursor-nocursor {
   cursor: auto !important;
-}
+} */

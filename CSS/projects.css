@@ -63,7 +63,22 @@ nav {
   align-items: center;
   padding: 0.5rem 3rem;
 }
-nav h1 {
+nav .heading {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  color: var(--text-color);
+  font-size: 2rem;
+}
+nav .heading .back-btn {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .heading h1 {
   color: var(--text-color);
   font-size: 2rem;
 }
