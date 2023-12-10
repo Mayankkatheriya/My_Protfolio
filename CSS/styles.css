@@ -217,6 +217,10 @@ body {
   padding: 0.4rem;
 }
 
+.workeduc-box .workeduc-content a {
+  color: var(--main-color);
+}
+
 .year {
   color: var(--main-color);
 }
