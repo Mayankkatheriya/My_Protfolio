@@ -63,25 +63,23 @@ filterBtn.forEach((el) => {
     });
 
     e.target.classList.add("selected");
+    const searchval = searchInput.value;
+    console.log(searchval);
     let dataCopy = [];
     if (e.target.id === "top") {
       dataCopy = projectData.filter((ele) => {
-        return ele.top == true;
+        return ele.top === true && ele.name.toLowerCase().includes(searchval);
       });
-      appendData(dataCopy);
-    } else if (e.target.id === "html-css") {
-      dataCopy = projectData.filter((ele) => {
-        return ele.type == "CSS";
-      });
-      appendData(dataCopy);
-    } else if (e.target.id === "javascript") {
-      dataCopy = projectData.filter((ele) => {
-        return ele.type == "JavaScript";
-      });
-      appendData(dataCopy);
     } else if (e.target.id === "all") {
-      appendData(projectData);
+      dataCopy = projectData.filter((ele) => {
+        return ele.name.toLowerCase().includes(searchval);
+      });
+    } else {
+      dataCopy = projectData.filter((ele) => {
+        return ele.type === e.target.id && ele.name.toLowerCase().includes(searchval);
+      });
     }
+    appendData(dataCopy);
   });
 });
 
@@ -89,34 +87,36 @@ filterBtn.forEach((el) => {
 searchInput.addEventListener("input", (e) => {
   const searchValue = e.target.value.toLowerCase().trim();
   let filteredProjects = [];
-
-  //* check which filtered option is currently selected
+  let dataDiv = document.querySelector(".selected");
   if (searchValue === "") {
-    let dataDiv = document.querySelector(".selected");
     if (dataDiv.id === "top") {
       filteredProjects = projectData.filter((ele) => {
-        return ele.top == true;
+        return ele.top === true;
       });
-      appendData(filteredProjects);
-    } else if (dataDiv.id === "html-css") {
-      filteredProjects = projectData.filter((ele) => {
-        return ele.type == "CSS";
-      });
-      appendData(filteredProjects);
-    } else if (dataDiv.id === "javascript") {
-      filteredProjects = projectData.filter((ele) => {
-        return ele.type == "JavaScript";
-      });
-      appendData(filteredProjects);
     } else if (dataDiv.id === "all") {
-      appendData(projectData);
+      filteredProjects = projectData
+    } else {
+      filteredProjects = projectData.filter((ele) => {
+        return ele.type === dataDiv.id;
+      });
     }
+    appendData(filteredProjects);
   }
   
   else {
-    filteredProjects = projectData.filter((project) => {
-      return project.name.toLowerCase().includes(searchValue);
-    });
+    if (dataDiv.id === "top") {
+      filteredProjects = projectData.filter((ele) => {
+        return ele.top === true && ele.name.toLowerCase().includes(searchValue);
+      });
+    } else if (dataDiv.id === "all") {
+      filteredProjects = projectData.filter((ele) => {
+          return ele.name.toLowerCase().includes(searchValue) ;
+        }); 
+    } else {
+      filteredProjects = projectData.filter((ele) => {
+        return ele.type === dataDiv.id && ele.name.toLowerCase().includes(searchValue);
+      });
+    }
     appendData(filteredProjects);
   }
 });

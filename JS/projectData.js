@@ -342,4 +342,58 @@ export const projectData = [
     img: "./Assets/chromeExtension.gif",
     top: true,
   },
+  {
+    name: "Text-Utils",
+    hosted:
+      "https://text-utils-react-gamma.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/TextUtils-React.git",
+    type: "React",
+    img: "./Assets/text-utils.png",
+    top: true,
+  },
+  {
+    name: "Password Generator",
+    hosted:
+      "https://password-generator-three-rho-82.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Password-generator.git",
+    type: "React",
+    img: "./Assets/password-generator.png",
+    top: true,
+  },
+  {
+    name: "Infinite Scroll - React",
+    hosted:
+      "https://infinite-scroll-react-rho.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Infinite-Scroll-React.git",
+    type: "React",
+    img: "./Assets/infinte_scroll-react.png",
+    top: true,
+  },
+  {
+    name: "Quiz Game",
+    hosted:
+      "https://quiz-game-orcin-beta.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Quiz-Game.git",
+    type: "React",
+    img: "./Assets/quiz-game.png",
+    top: true,
+  },
+  {
+    name: "MarkDown-Notepad",
+    hosted:
+      "https://markdown-notepad-mayank.netlify.app/",
+    github: "https://github.com/Mayankkatheriya/MarkDown-Notepad.git",
+    type: "React",
+    img: "./Assets/markdown-notepad.png",
+    top: true,
+  },
+  {
+    name: "Grocery Bud",
+    hosted:
+      "https://to-do-list-sigma-ashen.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/TO-Do-List.git",
+    type: "React",
+    img: "./Assets/grocery-bud.png",
+    top: true,
+  },
 ];
