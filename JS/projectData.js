@@ -396,4 +396,31 @@ export const projectData = [
     img: "./Assets/grocery-bud.png",
     top: true,
   },
+  {
+    name: "React-Routing",
+    hosted:
+      "https://react-routing-mocha.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/react-routing.git",
+    type: "React",
+    img: "./Assets/react-routing.png",
+    top: true,
+  },
+  {
+    name: "Budget Planner",
+    hosted:
+      "https://budget-planner-flame.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Budget-Planner.git",
+    type: "React",
+    img: "./Assets/budget-planner.png",
+    top: true,
+  },
+  {
+    name: "Dice Game",
+    hosted:
+      "https://dice-game-seven-phi.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Dice-game.git",
+    type: "React",
+    img: "./Assets/dice-game.png",
+    top: true,
+  },
 ];
