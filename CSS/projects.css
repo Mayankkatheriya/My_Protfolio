@@ -184,6 +184,12 @@ nav .heading h1 {
   border: 2px solid var(--main-color);
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .projectContainer {
   width: 100%;
   display: flex;
@@ -191,6 +197,7 @@ nav .heading h1 {
   justify-content: space-around;
   padding: 1rem 3rem;
   gap: 2rem;
+  max-width: 1580px;
 }
 
 .projectContainer .project-card {
