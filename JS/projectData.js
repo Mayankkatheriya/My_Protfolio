@@ -15,7 +15,7 @@ export const projectData = [
       "https://github.com/Mayankkatheriya/Mini-Project-1-Animated_Login_Page.git",
     type: "CSS",
     img: "./Assets/login-page.png",
-    top: true,
+    top: false,
   },
   {
     name: "Landing Page - 1",
@@ -31,7 +31,7 @@ export const projectData = [
     github: "https://github.com/Mayankkatheriya/Assignment_10-Animations.git",
     type: "CSS",
     img: "./Assets/Animations.png",
-    top: true,
+    top: false,
   },
   {
     name: "Tailwind Landing Page",
@@ -57,7 +57,7 @@ export const projectData = [
     github: "https://github.com/Mayankkatheriya/3D_waves.git",
     type: "CSS",
     img: "./Assets/3d-waves.png",
-    top: true,
+    top: false,
   },
   {
     name: "Business landing Page",
@@ -122,7 +122,7 @@ export const projectData = [
       "https://github.com/Mayankkatheriya/Weekly_Test_3_Shopping_Cart.git",
     type: "JavaScript",
     img: "./Assets/shopping-cart.png",
-    top: true,
+    top: false,
   },
   {
     name: "Random color Code",
@@ -146,7 +146,7 @@ export const projectData = [
     github: "https://github.com/Mayankkatheriya/Tip_Calculator.git",
     type: "JavaScript",
     img: "./Assets/tip-calc.png",
-    top: true,
+    top: false,
   },
   {
     name: "Click Me Game",
@@ -218,7 +218,7 @@ export const projectData = [
     github: "https://github.com/Mayankkatheriya/Phone_Hunting_API.git",
     type: "JavaScript",
     img: "./Assets/phone_API.png",
-    top: true,
+    top: false,
   },
   {
     name: "StopWatch",
@@ -266,7 +266,7 @@ export const projectData = [
     github: "https://github.com/Mayankkatheriya/Book_App.git",
     type: "JavaScript",
     img: "./Assets/Book_app.png",
-    top: true,
+    top: false,
   },
   {
     name: "Local Storage",
