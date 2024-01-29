@@ -423,4 +423,22 @@ export const projectData = [
     img: "./Assets/dice-game.png",
     top: true,
   },
+  {
+    name: "Disney-Clone React",
+    hosted:
+      "https://dice-game-seven-phi.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Disney-Clone.git",
+    type: "React",
+    img: "./Assets/disney+.gif",
+    top: true,
+  },  
+  {
+    name: "Login Authentication (Firebase)",
+    hosted:
+      "https://login-authetication.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Login-Authetication.git",
+    type: "React",
+    img: "./Assets/login-authentication.png",
+    top: true,
+  },
 ];
