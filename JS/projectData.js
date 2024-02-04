@@ -441,4 +441,14 @@ export const projectData = [
     img: "./Assets/login-authentication.png",
     top: true,
   },
+  {
+    name: "Movies Database App",
+    hosted:
+      "https://movix-app-murex.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/Movix-App.git",
+    type: "React",
+    img: "./Assets/movies-database.png",
+    top: true,
+  },
+
 ];
