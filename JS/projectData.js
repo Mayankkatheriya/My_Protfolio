@@ -442,12 +442,21 @@ export const projectData = [
     top: true,
   },
   {
-    name: "Movies Database App",
+    name: "Movie Explorer App",
     hosted:
       "https://movix-app-murex.vercel.app/",
     github: "https://github.com/Mayankkatheriya/Movix-App.git",
     type: "React",
-    img: "./Assets/movies-database.png",
+    img: "./Assets/moviesDatabase.gif",
+    top: true,
+  },
+  {
+    name: "Cloud Storage Application",
+    hosted:
+      "https://google-drive-clone-roan.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/google-drive-clone.git",
+    type: "React",
+    img: "./Assets/cloudstorageapp.gif",
     top: true,
   },
 
