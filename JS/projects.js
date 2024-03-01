@@ -39,7 +39,7 @@ function appendData(data) {
     let div = document.createElement("div");
     div.className = "project-card";
     div.setAttribute("data-aos", "zoom-in-up");
-    div.setAttribute("data-aos-duration", "1200");
+    div.setAttribute("data-aos-duration", "800");
     div.innerHTML = `
         <a href = "${el.hosted}" class="project-img" target = "_blank" title = "Open">
             <img src="${el.img}" alt="project-img" title = "${el.type}">
