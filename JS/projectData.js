@@ -459,5 +459,13 @@ export const projectData = [
     img: "./Assets/cloudstorageapp.gif",
     top: true,
   },
-
+  {
+    name: "Maching Card Game",
+    hosted:
+      "https://maching-game-ts.vercel.app/",
+    github: "https://github.com/Mayankkatheriya/machingGame_ts.git",
+    type: "React",
+    img: "./Assets/machinggame.png",
+    top: true,
+  },
 ];

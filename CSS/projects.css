@@ -77,6 +77,7 @@ nav .heading .back-btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #000;
 }
 nav .heading h1 {
   color: var(--text-color);
@@ -216,6 +217,7 @@ main {
 
 .project-card h3 {
   font-size: 1.2rem;
+  text-align: center;
   color: var(--text-color);
 }
 

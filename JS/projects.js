@@ -35,7 +35,7 @@ closeIcon.addEventListener("click", () => {
 function appendData(data) {
   projectBox.innerHTML = "";
   data.sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
-  data.forEach((el) => {
+  data.forEach((el, idx) => {
     let div = document.createElement("div");
     div.className = "project-card";
     div.setAttribute("data-aos", "zoom-in-up");
@@ -44,7 +44,7 @@ function appendData(data) {
         <a href = "${el.hosted}" class="project-img" target = "_blank" title = "Open">
             <img src="${el.img}" alt="project-img" title = "${el.type}">
         </a>
-        <h3>${el.name}</h3>
+        <h3>${idx+1}: ${el.name}</h3>
         <div class="btn-box">
             <a href="${el.hosted}" target="_blank" title="Try it" class="btn">Live Preview <i class='bx bx-link-external' ></i></a>
             <a href="${el.github}" target="_blank" title="Code" class="btn">Source Code <i class='bx bx-code-alt'></i></a>
