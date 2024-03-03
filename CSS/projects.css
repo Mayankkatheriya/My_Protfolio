@@ -199,6 +199,7 @@ main {
   padding: 1rem 3rem;
   gap: 2rem;
   max-width: 1580px;
+  margin-top: 2rem;
 }
 
 .projectContainer .project-card {

@@ -250,6 +250,12 @@ body {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1439px) {
+  .workeduc-box .workeduc-content {
+    font-size: .95rem;
+  }
+}
+
 .number-page {
   position: absolute;
   bottom: 0.9rem;
@@ -435,6 +441,38 @@ body {
 .skills-content .content span i {
   color: var(--main-color);
   font-size: 3rem;
+}
+
+@media screen and (max-width: 1518px) {
+  .skills-content .content {
+    gap: 0.8rem;
+  }
+  
+  .skills-content .content span {
+    width: 5.5rem;
+    height: 4.5rem;
+    font-size: 1rem;
+  }
+  
+  .skills-content .content span i {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .skills-content .content {
+    gap: 0.6rem;
+  }
+  
+  .skills-content .content span {
+    width: 5rem;
+    height: 4rem;
+    font-size: .9rem;
+  }
+  
+  .skills-content .content span i {
+    font-size: 2rem;
+  }
 }
 
 .contact-box {
