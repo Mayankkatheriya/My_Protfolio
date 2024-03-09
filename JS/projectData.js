@@ -426,7 +426,7 @@ export const projectData = [
   {
     name: "Disney-Clone React",
     hosted:
-      "https://dice-game-seven-phi.vercel.app/",
+      "https://disney-clone-psi-henna.vercel.app/",
     github: "https://github.com/Mayankkatheriya/Disney-Clone.git",
     type: "React",
     img: "./Assets/disney+.gif",
